@@ -1,0 +1,8 @@
+"Life-cycle Phase
+ (Security attribute)",Security objects
+planning and design,"1. To consider the environmental impact on the security of the perception terminals.
+2. To consider access rights of the upper-level user system to the underlying perception terminals to avoid illegal manipulation behavior."
+development and construction,"1.To deploy the corresponding mechanisms and specific measurements to achieve all security protection functions, including  confidentiality, integrity, availability, authentication and access control, secure key, anti-DDOS attacks, etc."
+Operation and Maintenance (O&M) mangement,"1. To conduct information security management while monitoring the system security. . It requires improving the security mechanism and implementing control measurements, etc."
+decommissioning,"1. To timely backup and destroy the data, access logs and other information in the expired or abandoned IoT systems.
+2. To perform the necessary initialization configuration, cache clearing and other operations before reusing some devices to avoid information leakage"

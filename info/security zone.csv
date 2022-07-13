@@ -1,0 +1,9 @@
+"Security Zone
+(Layer in IoT)",Domain,Security Requirements
+Perceptual Security,Target Object Domain,"To satisfy the security requirements of the sensing object, the control object and the corresponding sensing control system"
+,Sensing Domain,
+Network Security,Resource Exchange Domain,"To guarantee the authenticity and validity of data aggregation and pre-processing, the confidentiality and reliability of network transmission, the privacy and authenticity of information exchange."
+,Service Domain,
+Support Security,"operation and maintenance
+(Q\&M) domain",To satisfy the security management needed for operation and maintenance and the security functions required by relevant laws and regulations.
+Application Security,User Domain,"To satisfy the user's authentication, access control authority, and need to have a certain active anti-attack ability to protect the system reliability."

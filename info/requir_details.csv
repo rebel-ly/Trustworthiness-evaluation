@@ -1,0 +1,50 @@
+"Life-cycle Phase
+ (Security attribute)","Security Zone
+(Security sub-attribute)",Security Requirement,Requirement Details
+planning and design,Perceptual Security,"Physical security
+Network security
+System security","1) Physical security design of perception terminals, routers and other devices security design
+2) Access security design for perception terminals and other devices
+3) Security design for conventional host nodes and systems"
+,Application Security,"System security
+Application security","1) Security design for conventional host nodes and systems
+2) Security design for resource-constrained nodes and systems
+3) Security design for application softwares"
+development and construction,Perceptual Security,"Physical security 
+Network security
+System security","1) Physical security requirements of perception terminals, routers and other devices security design
+2) Access security requirements for perception terminals and other devices
+3) Security requirements for conventional host nodes and systems"
+,Network Security,"Network security
+System security","1) Access security requirements
+2) Communication security requirements
+3) System security requirements"
+,Application Security,"System security
+Application security","1) Security requirements for conventional host nodes and systems
+2) Security requirements for resource-constrained nodes and systems
+3) Security requirements for application softwares"
+,Supprot Security,System security,"1) Security requirements for conventional host nodes and systems
+2) Security requirements for resource-constrained nodes and systems"
+Operation and Maintenance (O&M) mangement,Perceptual Security,"O&M security
+Security management","1) O&M security requirements for different security responsible stakeholders
+2) O&M security requirements for system management"
+,Network Security,"O&M security
+Security management","1) O&M security requirements for different security responsible stakeholders
+2) O&M security requirements for system management"
+,Application Security,"O&M security
+Security management","1) O&M security requirements for different security responsible stakeholders
+2) O&M security requirements for system management"
+,Support Security,"System security
+O&M security
+Security management","1) O&M security requirements for conventional host nodes and systems
+2) O&M security requirements for resource-constrained nodes and systems
+3) O&M security requirements for different security responsible stakeholders
+4) O&M security requirements for system management"
+decommissioning,Application Security,Secure processing,"1) Secure storage for historical data in all user systems
+2) Secure erase for cached data in all user systems
+3) Physical destruction of storage media for some highly sensitive data"
+,,,
+,,,
+,,,
+,,,
+,,,

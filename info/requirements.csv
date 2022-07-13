@@ -1,0 +1,18 @@
+Security attribute,Security sub-attribute,Security Requirements,Security metrics,Targeted Requirements
+Development and Construction Phase,"Application 
+Security Zone",System security,Are users logged into the various IoT systems identified and authenticated?,"Mainly for the conventional host nodes and systems with sufficient resources (such as computing, energy, storage, etc.) in the IoT"
+,,,Are access control functions activated and appropriate security regulations in place?,
+,,,Is the access authority of the default account restricted?,
+,,,Are authentication information such as default accounts and passwords changed in a timely manner?,
+,,,Is there a management system to regularly delete the redundant and expired accounts in the system?,
+,,,Does the operating system in IoT follow the least privilege principle?,
+,,,Are the patches updated in time?,
+,,,Is anti-malware software installed and the software version and malicious code database updated in a timely manner?,
+,,,Are there security protections in place when using middleware technology?,
+,,,Are the authentication information such as default account passwords updated in a timely manner?,"Mainly for nodes and systems with limited resources (such as computing, energy, storage, etc.) in the IoT"
+,,,Are redundant and expired accounts regularly removed from the system?,
+,,,Are patches updated in a timely manner on an irregular basis?,
+,,Application Security,Does it provide data validity check function?,"Mainly for a large number of applications in the IoT, which collects massive amounts of data"
+,,,Does it ensure that the format or length of data input through human-computer interaction or communication interface meets the requirements set by the system?,
+,,,"Are important data related to national security, public order, and personal privacy of citizens backed up offsite?",
+,,,Does it guarantee that the software used will not transmit data to the outside world without the permission of the system operator?,

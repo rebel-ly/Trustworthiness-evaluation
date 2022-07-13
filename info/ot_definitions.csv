@@ -1,0 +1,6 @@
+Term,Definition
+IOT System Life-cycle,"The time dimension guiding the design of the IoT security reference model, including the following four phases: planning and design, development and construction, operations management, and decommissioning."
+Security Zone,A collection of information security requirements corresponding to a number of specific functional domains or sub-domains in the IoT reference architecture.
+Generic Security Requirements,"The specific security protection measures, which are based on the traditional Internet information security protection and integrated consideration of the special security risks and threats in the IOT systems. There are six types depending on the object: physical security, network security, system security, application security, Operation and Maintenance (O&M) security, and security management."
+Security Metrics,"The security metrics are obtained from the downward division of the corresponding security requirement, which can be measured directly."
+Security reference model,"A reference model is based on the zoning abstraction of the IOT architecture, then combined with the system life-cycle and generic security requirements. "

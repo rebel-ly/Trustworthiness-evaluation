@@ -1,0 +1,24 @@
+"Security metrics adding form 
+ASPICE Sub-process",Security Requirement,"Security 
+Sub-attribute",Security Attribute
+System Requirements Analysis Metric,System Security,"Application 
+Security Zone","Development and 
+Construction
+Security Phase "
+System Architectural Design Metric,,,
+Metric of System Integration and Integration Test,,,
+System Qualification Test Metric,,,
+Software Requirements Analysis Metric,,,
+Software Architectural Design Metric,,,
+Software Detailed Design and Unit Construction Metric,,,
+Software Unit Verification Metric,,,
+Metric of software Integration and Integration Test ,,,
+Metric of Software Qualification Test ,,,
+Supplier Monitoring Metric,O&M Security,"Suppport 
+Security Zone","O&M Security
+Security Phase"
+Quality Assurance Metric,Security Management,,
+Configuration Management Metric,,,
+Problem Resolution Management Metric,,,
+Change Request Management Metric,,,
+Project Management Metric,Security Management,,
