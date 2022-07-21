@@ -1,0 +1,78 @@
+The Analytic Hierarchy Process (AHP) is one of the multi-criteria decisions-making method, which developed by Saaty in the late 1970s~\cite{saaty1977}. It decomposes a complex decision problem into various levels, and then relies on expert judgement to derive a scale of priority for each criterion through pairwise comparisons~\cite{AHP}, which involves the following steps.
+
+\textbf{Step-1: Building a decision hierarchy.}
+In the first step, we need to understand the purpose of the decision and the alternative actions that can be taken. Then, a top-down decision hierarchy from the purpose to the alternatives is constructed based on it. The intermediate levels represent the criteria and sub-criteria derived from the decomposition of the decision purpose, which together with the underlying alternatives are called indicators.
+
+\textbf{Step-2: Constructing the pairwise comparison matrix.}
+The hierarchy established in the first step reflects the relationship between the indicators, but the influence of each indicator to the decision purpose needs to be quantitatively evaluated. Considering that directly evaluating indicators has a high potential for error when there are many indicators affecting the purpose, Satty suggests establishing a pairwise comparison matrix by comparing indicators in pairs. Namely, taking two indicators ${x_{i}}$ and ${x_{j}}$ each time, with ${a_{ij}}$ denoting the ratio of the influence value of ${x_{i}}$ and ${x_{j}}$ on the same target. All the comparison results are expressed with a matrix $A={{a_{ij}}_{n*n}}$, which is called $A$ as the pairwise comparison matrix between all the indicators of the target (abbreviated as discriminant matrix). A pairwise comparison matrix (the form shown in Eq.~\ref{matrix}) satisfy the following properties:
+\begin{equation}
+\label{matrix}
+A = \left[ {\begin{array}{*{20}{c}}
+1&{{a_{12}}}& \cdots &{{a_{1n}}}\\
+{\frac{1}{{{a_{12}}}}}&1& \cdots &{{a_{2n}}}\\
+ \vdots & \vdots & \vdots & \vdots \\
+{\frac{1}{{{a_{1n}}}}}&{\frac{1}{{{a_{2n}}}}}& \cdots &1
+\end{array}} \right]    
+\end{equation}
+
+\begin{itemize}
+    \item[$ \bullet $] ${a_{ij}}$ indicates the importance of the ${i}$-th criterion relative to the ${j}$-th criterion, where ${a_{ij}}>0, i,j = 1,2,...,n$ and $n$ is the number of indicators.
+    %of criterion.        
+    \item[$ \bullet $] ${a_{ij}} = \frac{1}{{{a_{ji}}}}$, and ${a_{ii}} = 1$
+    \item[$ \bullet $] If ${a_{ij}} = 1$, it indicates the importance of the ${i}$-th criterion is equal to the ${j}$-th criterion. And if ${a_{ij}} > 1$, it indicates the ${i}$-th criterion is more important than ${j}$-th criterion. Conversely, ${a_{ij}} < 1$ means that the ${i}$-th criterion is less important than ${j}$-th criterion.
+\end{itemize} 
+
+To quantitatively assess each pair of indicators, we need a numerical scale to indicate the importance of one element relative to another. The number from 1 (equal importance) to 9 (extreme importance) often be used and assigned to the more important criterion in the pair based on the expert decision-making (Table~\ref{scale}), and the reciprocal of the value is assigned to the other. After $\frac{{n(n - 1)}}{2}$ comparisons, the complete pairwise comparison matrix can be obtained for the subsequent steps.
+\begin{table}[htb]
+\centering
+\caption{The common numerical scale}
+\label{scale}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Qualitative Description    & Scale \\ \midrule
+Extremely preferred        &  9     \\
+Very strongly to extremely &  8     \\
+Very strongly preferred    &  7     \\
+Strongly to very strongly  &  6     \\
+Strongly preferred         &  5     \\
+Moderately to strongly     &  4     \\
+Moderately preferred       &  3     \\
+Equally to moderately      &  2     \\
+Equally preferred          &  1     \\ \bottomrule
+\end{tabular}%
+\end{table}
+
+\textbf{Step-3: Calculating the local weights.}
+With the previous step, we can obtain the pairwise comparison matrices for each row. Then based on the fact that for a consistent pairwise comparison matrix, the normalised vector of its column is the corresponding sorting vector of this column, we can calculate the local weights for the indicators.
+Some various methods can achieve the sorting goal, and here we choose the Geometric Meaning method and Eigenvector method (EV) method which are most commonly used for illustration. The former is performed by dividing the elements of each column by the respective column sum and then calculating the averages of rows. While the latter relies on the matrix's eigenvalue, which can be denoted as ${\lambda _{\max }}$ and obtained by repeated squaring and normalisation (see Eq.~\ref{eigenvalue}). Thus, the local weights of indicators (the priorities of the indicators) can be determined by the geometric mean or maximum eigenvalue:
+\begin{equation}
+{\lambda _{\max }} = \frac{1}{n}\sum\limits_{i = 1}^n {\frac{{{{(Aw)}_i}}}{{{w_i}}}} 
+\label{eigenvalue}
+\end{equation}
+where $n$ denotes the scale of the pairwise comparison matrix $A$ (the number of criteria) and ${w_i}$ denotes the normalised weight. 
+
+\textbf{Step-4: Obtaining the global weights and Checking.}
+The local weights obtained above are the weights of a set of indicators (at the same level) relative to an indicator in the upper level, but we still need to derive the weights of all the indicators, especially the bottom-level indicators (alternatives), relative to the purpose 
+%in order 
+to make optimal decision. Using the global weight of the criterion shows its importance in the overall hierarchy, which can be formed by multiplying the local weight of that criterion with the local weights of the indicator at the upper level and summing them. Then the priority ranking of the alternatives is the ranking of their global weights. In addition, we need to check whether the pairwise comparison matrix is consistent by calculating the consistency ratio (CR) based on the consistency index (CI) and random index (RI) to ensure the validity of the sorting results (Eq.~\ref{CI}). 
+\begin{equation}
+\begin{array}{l}
+\vspace{1ex}
+CI = \frac{{{\lambda _{\max }} - n} }{{n - 1}}\vspace{1ex}\\
+CR = \frac{{CI}} {{RI}}
+\end{array}
+\label{CI}
+\end{equation}
+where $n$ denotes the scale of the pairwise comparison matrix $A$ and RI is a specific value given by Saaty~\cite{AHP}, show in Table~\ref{RI}.
+Note that if the CR value is less than or equal to 0.1, it is considered acceptable. Otherwise, the process needs to start again from Step-2.
+\begin{table}[htb]
+\centering
+\caption{Random index value corresponding to the rank of the matrix}
+\label{RI}
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}ccccccccccccl@{}}
+\toprule
+n  & 3    & 4    & 5    & 6    & 7    & 8    & 9    & 10   & 11   & 12   & 13   & ... \\ \midrule
+RI & 0.58 & 0.90 & 1.12 & 1.24 & 1.32 & 1.41 & 1.45 & 1.49 & 1.51 & 1.54 & 1.56 & ... \\ \bottomrule
+\end{tabular}%
+\end{table}
