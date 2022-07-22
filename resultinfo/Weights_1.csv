@@ -1,0 +1,24 @@
+Measurements Level - Attributes Weights in the First Phase,,
+ASPICE Process,SYS,0.3
+,SWE,0.25
+,ACQ,0.2
+,SUP,0.1
+,MAN,0.15
+Reliability,Maturity,0.4
+,Fault-tolerance,0.3
+,Sustainability,0.3
+Security,Security & Confidentiality,0.4
+,Completeness,0.3
+,Anti-hazardous,0.3
+Real-time,Timeliness of processing,0.6
+,Real-time stability,0.4
+Availability,Suitability,0.3
+,Accuracy,0.25
+,Interoperability,0.2
+,Ease of use,0.1
+,Dependency,0.15
+Maintainability,Easy analyzability,0.3
+,Changeability,0.2
+,Easy Testability,0.25
+,Ease of Learning,0.1
+,Easily replaceable,0.15
