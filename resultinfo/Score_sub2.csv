@@ -1,0 +1,24 @@
+Sub-attributes Score,,
+ASPICE Process,SYS,0.857
+,SWE,0.798
+,ACQ,0.993
+,SUP,0.992
+,MAN,0.95
+Reliability,Maturity,0.613
+,Fault-tolerance,0.949
+,Sustainability,0.685
+Security,Security & Confidentiality,0.104
+,Completeness,0.875
+,Anti-hazardous,0.564
+Real-time,Timeliness of processing,0.6
+,Real-time stability,0.496
+Availability,Suitability,0.608
+,Accuracy,0.637
+,Interoperability,0.665
+,Ease of use,0.651
+,Dependency,0.732
+Maintainability,Easy analyzability,0.703
+,Changeability,0.736
+,Easy Testability,0.997
+,Ease of Learning,0.714
+,Easily replaceable,0.746
